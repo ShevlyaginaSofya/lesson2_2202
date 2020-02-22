@@ -1,7 +1,7 @@
 def ask_user():
     while True:
-        x=input()
         try:
+            x=input()
             if x in answer:
                 print(answer.get(x))       
         except KeyboardInterrupt:
