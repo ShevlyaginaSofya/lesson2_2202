@@ -1,15 +1,15 @@
 def compare(str1,str2):
-    if type(str1)!=str and type(str2)!=str:
+    if isinstance(str1, str)==False or isinstance(str2, str)==False:
         return 0
     elif str1==str2:
         return 1
-    elif str1!=str2 and len(str1)>len(str2):
+    elif len(str1)>len(str2):
         return 2
-    elif str1!=str2 and str2=='learn':
+    elif str2=='learn':
         return 3
-print('Введите 1 строку')
-str1 =input()
-print('Введите 2 строку')
-str2=input()
+str1 =123
+print('1 строка', str1)
+str2='привет!'
+print('2 строка', str2)
 out=compare(str1,str2)
 print(out)
